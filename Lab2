@@ -1,0 +1,24 @@
+class A():
+    def __init__(self, lvl, hp, age):
+        self.hp = hp
+        self.lvl = lvl
+        self.age = age
+
+    def stat(self):
+        print("Воин имеет " + str(self.lvl) + " уровень" + ",его здоровье составляет " + str(self.hp) + " единиц.")
+
+    def age(self, age):
+        self.age += age
+Warrior1 = A(35, 100, 54)
+Warrior2 = A(20, 80, 26)
+
+class B(A):
+    def __init__(self, lvl, speed):
+        super().__init__(self, lvl, hp, age)
+        self.speed = speed
+Svodka=B("Шорох " + str(self.speed))
+print(Svodka)
+
+class C(A):
+    def __init__(self, lvl, hp, age):
+        pass
